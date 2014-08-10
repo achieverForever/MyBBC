@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wilson.com.mybbc.NewsDetailActivity"
+    android:id="@+id/news_detail_container">
+
+
+    <TextView android:id="@+id/category"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="CATEGORY"
+              android:textColor="@android:color/background_dark"
+              android:textStyle="bold"
+              android:layout_gravity="left"
+              android:layout_marginLeft="8dp"
+              android:layout_marginTop="8dp"
+              android:textSize="15sp"
+              android:layout_marginBottom="8dp"
+              android:gravity="left"/>
+
+
+    <android.support.v4.view.ViewPager android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"/>
+
+    <com.viewpagerindicator.LinePageIndicator
+        android:id="@+id/pager_indicator"
+        android:padding="5dip"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"/>
+</LinearLayout>

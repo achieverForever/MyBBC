@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/theme_grid_image_container"
+        android:layout_width="144dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="8dp" >
+
+        <RelativeLayout
+            android:id="@+id/news_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#000000" >
+
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:padding="4dp"
+                android:text="News Title Bla Bla Bla ..."
+                android:textColor="#ffffff"
+                android:maxLines="2"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <wilson.com.mybbc.wiget.FadeInNetworkImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/news_title_container"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
